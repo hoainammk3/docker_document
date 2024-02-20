@@ -62,3 +62,5 @@ VNC sử dụng mô hình kiến trúc client-server. Máy tính mà bạn muố
 VNC Client là phần mềm chạy trên máy tính hoặc thiết bị bạn muốn sử dụng để điều khiển máy tính mục tiêu. Nó nhận dữ liệu màn hình và dữ liệu nhập liệu từ máy chủ VNC và hiển thị chúng trên màn hình của người dùng và chuyển dữ liệu nhập liệu từ người dùng đến máy chủ VNC.
 ### Giao thức Truyền tải:
 Giao thức truyền tải chính của VNC là một giao thức đơn giản dựa trên TCP/IP. Khi kết nối được thiết lập, dữ liệu hình ảnh của màn hình được mã hóa và gửi từ máy chủ VNC đến máy khách VNC.
+
+*Sinh viên thực hiện: Nguyễn Hoài Nam - 21020779*
