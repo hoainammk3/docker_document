@@ -1,0 +1,16 @@
+# Sử dụng một image Ubuntu làm base
+FROM ubuntu:latest
+
+# Cài đặt các gói cần thiết
+RUN apt-get update && apt-get install -y \
+    xfce4 \
+    xfce4-goodies \
+    tightvncviewer \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Mở cổng 5901 để kết nối tới VNC server
+EXPOSE 5901
+
+# CMD sẽ chạy lệnh kết nối tới máy chủ VNC
+CMD ["bash", "-c", "vncviewer <server_ip>:5901"]
